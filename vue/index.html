@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue | 日志</title>
+    <meta name="description" content="记录">
+    <link rel="icon" href="/doc-blog/favicon.ico">
+    
+    <link rel="preload" href="/doc-blog/assets/css/0.styles.d7f38f5f.css" as="style"><link rel="preload" href="/doc-blog/assets/js/app.5a5a077d.js" as="script"><link rel="preload" href="/doc-blog/assets/js/2.a86a4552.js" as="script"><link rel="preload" href="/doc-blog/assets/js/11.5fea0189.js" as="script"><link rel="prefetch" href="/doc-blog/assets/js/10.ce11369c.js"><link rel="prefetch" href="/doc-blog/assets/js/12.313dfec9.js"><link rel="prefetch" href="/doc-blog/assets/js/3.54c1f689.js"><link rel="prefetch" href="/doc-blog/assets/js/4.a5655a0b.js"><link rel="prefetch" href="/doc-blog/assets/js/5.697961ce.js"><link rel="prefetch" href="/doc-blog/assets/js/6.f5675a0f.js"><link rel="prefetch" href="/doc-blog/assets/js/7.05ee980b.js"><link rel="prefetch" href="/doc-blog/assets/js/8.80499e14.js"><link rel="prefetch" href="/doc-blog/assets/js/9.9138ecd8.js">
+    <link rel="stylesheet" href="/doc-blog/assets/css/0.styles.d7f38f5f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/doc-blog/" class="home-link router-link-active"><!----> <span class="site-name">日志</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/doc-blog/cur/" class="nav-link">CUR</a></div><div class="nav-item"><a href="/doc-blog/vue/" class="nav-link router-link-exact-active router-link-active">Vue</a></div><div class="nav-item"><a href="/doc-blog/java/" class="nav-link">Java</a></div><div class="nav-item"><a href="/doc-blog/others/" class="nav-link">其它</a></div> <a href="https://github.com/wdios/doc-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/doc-blog/cur/" class="nav-link">CUR</a></div><div class="nav-item"><a href="/doc-blog/vue/" class="nav-link router-link-exact-active router-link-active">Vue</a></div><div class="nav-item"><a href="/doc-blog/java/" class="nav-link">Java</a></div><div class="nav-item"><a href="/doc-blog/others/" class="nav-link">其它</a></div> <a href="https://github.com/wdios/doc-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue</span> <!----></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue"><a href="#vue" aria-hidden="true" class="header-anchor">#</a> Vue</h1> <p>事件修饰符</p> <ul><li>stop: 不会一直传递，自己运行结束就结束了。</li> <li>prevent: 比如 submit 加了这个，就不会提交了。</li> <li>capture: 在传递的父子事件种，加了这个，无论先点哪个，都先执行这个。</li> <li>self: 只有点击自己本身才会执行，点他的子元素也不会被传递。</li> <li>once: 只执行一次。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- 阻止单击事件冒泡 --&gt;
+&lt;a v-on:click.stop=&quot;doThis&quot;&gt;&lt;/a&gt;
+&lt;!-- 提交事件不再重载页面 --&gt;
+&lt;form v-on:submit.prevent=&quot;onSubmit&quot;&gt;&lt;/form&gt;
+&lt;!-- 修饰符可以串联  --&gt;
+&lt;a v-on:click.stop.prevent=&quot;doThat&quot;&gt;&lt;/a&gt;
+&lt;!-- 只有修饰符 --&gt;
+&lt;form v-on:submit.prevent&gt;&lt;/form&gt;
+&lt;!-- 添加事件侦听器时使用事件捕获模式 --&gt;
+&lt;div v-on:click.capture=&quot;doThis&quot;&gt;...&lt;/div&gt;
+&lt;!-- 只当事件在该元素本身（而不是子元素）触发时触发回调 --&gt;
+&lt;div v-on:click.self=&quot;doThat&quot;&gt;...&lt;/div&gt;
+
+&lt;!-- click 事件只能点击一次，2.1.4版本新增 --&gt;
+&lt;a v-on:click.once=&quot;doThis&quot;&gt;&lt;/a&gt;
+</code></pre></div><p>按键修饰符</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- 只有在 keyCode 是 13 时调用 vm.submit() --&gt;
+&lt;input v-on:keyup.13=&quot;submit&quot;&gt;
+&lt;!-- 同上 --&gt;
+&lt;input v-on:keyup.enter=&quot;submit&quot;&gt;
+&lt;!-- 缩写语法 --&gt;
+&lt;input @keyup.enter=&quot;submit&quot;&gt;
+
+&lt;p&gt;&lt;!-- Alt + C --&gt;
+&lt;input @keyup.alt.67=&quot;clear&quot;&gt;
+&lt;!-- Ctrl + Click --&gt;
+&lt;div @click.ctrl=&quot;doSomething&quot;&gt;Do something&lt;/div&gt;
+</code></pre></div><p>当绑定 v-on:click 事件时，想传入参数同时也传入当前元素：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;button v-on:click=&quot;say('hi',$event)&quot;&gt;say hi&lt;/button&gt;
+
+methods:{
+  say:function(message,e){
+     alert(message);
+     console.log(e.currentTarget);
+  }
+}
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/wdios/doc-blog/edit/master/docs/vue/README.md" target="_blank" rel="noopener noreferrer">编辑本页！</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/doc-blog/assets/js/app.5a5a077d.js" defer></script><script src="/doc-blog/assets/js/2.a86a4552.js" defer></script><script src="/doc-blog/assets/js/11.5fea0189.js" defer></script>
+  </body>
+</html>
